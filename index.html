@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pizza website">
+    <meta name="keywords" content="Menu">
+    <meta name="Developer" content="Aditi Trivedi">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title> Pizza Go</title>
+    <link rel="shortcut icon" href="Pizza_icon.png" type="x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="mydiv1">
+            <h1>
+                <center>PIZZA GO</center>
+            </h1>
+        </div>
+        <center><img src="Pizza.jpg" /></center>
+    </header>
+    <main>
+        <h2>
+            <center>To deliver the yummy pizza, please answer some of the question below:</center>
+        </h2>
+        <div>
+            <form action="">
+                <center>
+                    <div class="subdiv">
+                        <label for="quantity" class="label1"> Number of Pizza:</label>
+                        <input type="number" id="quantity" class="input1" name="quantity">
+                    </div>
+                    <div class="subdiv">
+                        <label for="size" class="label1">Number of slices:</label>
+                        <input type="number" id="size" class="input1" name="size" min="4" max="10">
+                    </div>
+                    <div class="subdiv">
+                        <label for="shape" class="label1"> Select the shape:</label>
+                        <select id="shape">
+                            <option value="square">Square</option>
+                            <option value="round">Round</option><br>
+                        </select>
+                    </div>
+                </center>
+                <div class="subdiv3">
+                    <div class="subdiv2">
+                        <label for="toppings" class="label1"> Select Toppings:</label><br />
+                        <input type="radio" id="toppings" name="pizza toppings" value="Mozzarella">
+                        <label for="Mozzarella">Mozzarella</label><br />
+                        <input type="radio" id="toppings" name="pizza toppings" value="Bell peppers">
+                        <label for="Bell peppers">Bell peppers</label><br />
+                        <input type="radio" id="toppings" name="pizza toppings" value="Oregano">
+                        <label for="Oregano">Oregano</label><br />
+                        <input type="radio" id="toppings" name="pizza toppings" value="Vegan cheese">
+                        <label for="Vegan cheese">Vegan cheese</label><br />
+                        <input type="radio" id="toppings" name="pizza toppings" value="Roasted red peppers">
+                        <label for="Roasted red peppers">Roasted red peppers</label>
+                    </div>
+
+                    <div class="subdiv">
+                        <label for="crust" class="label1"> Types of crust:</label><br />
+                        <input type="radio" id="crust" name="crust" value="Thin and Crispy">
+                        <label for="Thin and Crispy">Thin and Crispy</label><br />
+                        <input type="radio" id="crust" name="crust" value="Chicago Deep Dish">
+                        <label for="Chicago Deep Dish">Chicago Deep Dish</label><br />
+                        <input type="radio" id="crust" name="crust" value="Stuffed Crust">
+                        <label for="Stuffed Crust">Stuffed Crust</label><br />
+                        <input type="radio" id="crust" name="crust" value="New York Style">
+                        <label for="New York Style">New York Style</label><br />
+                        <input type="radio" id="crust" name="crust" value="Whole Wheat or Multigrain">
+                        <label for="Whole Wheat or Multigrain">Whole Wheat or Multigrain</label>
+                    </div>
+                </div>
+
+                <center>
+                    <h2><label for="payment type" class="myheading"> Select the mode of payment</label></h2>
+                    <select id="payment type">
+                        <option value="in-person">Payment on delivery</option>
+                        <optgroup label="Online">
+                            <option value="debit or credit">Debit/Credit Card</option>
+                            <option value="UPI">UPI</option>
+                        </optgroup>
+                    </select>
+                </center>
+        </div>
+        <h2 class="myhead">
+            <center>Customer details</center>
+        </h2>
+        <fieldset>
+            <legend style="color:#fff;">Personal details:</legend>
+            <div class="subdiv">
+                <label for="fname" class="label1">First name:</label>
+                <input type="text" id="fname" name="fname" class="input2"><br>
+            </div>
+            <div class="subdiv">
+                <label for="lname" class="label1" class="input2">Last name:</label>
+                <input type="text" id="lname" name="lname" class="input2"><br>
+            </div><br><br>
+            <div class="subdiv">
+                <label for="email" class="label1">Email - ID: </label>
+                <input type="email" id="email" name="email" class="input2"><br>
+            </div>
+            <label for="number" class="label1">Phone No.: </label>
+            <input type="number" id="number" name="Phone number" class="input2"><br><br>
+            <label for="address" class="label1">Address:</label><br><br>
+            <textarea rows="4" cols="60"></textarea><br><br>
+            <button type="submit" onclick="alert('Thank You for the order, your order is confirmed')">Submit</button>
+        </fieldset>
+        <center>
+            <h3 class="inset">Review</h3>
+            <p><label for="review">Give feedback to our service</label><br><br></p>
+            <textarea id="review" name="review" rows="5" cols="100"></textarea><br>
+            <input type="submit" value="Submit">
+        </center>
+        </form>
+    </main>
+    <footer>
+        <p1>@ Have fun and visit again</p1>
+    </footer>
+</body>
+
+</html>
